@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "네이버 카페 이미지 슬라이드쇼 - OBS용",
+    "version": "1.0",
+    "host_permissions": [
+    "*://*/*"
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "tabs"
+    ],
+    "action": {
+      "default_title": "이미지 슬라이드쇼",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }

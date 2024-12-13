@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/gh/JellyBrick/SeguFont/Goseogu-Regular.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #slideshow-image {
+      max-width: 90vw;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    #credit {
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="slideshow-image">
+    <div id="credit"></div>
+  </div>
+  <script src="slideshow.js"></script>
+</body>
+</html>
